@@ -41,6 +41,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 let mapleader = " "
@@ -71,6 +72,9 @@ map <Leader>nt :NERDTreeFind<CR>
 map <Leader>p :Files<CR>
 map <Leader>ag :Ag<CR> 
 
+" for emmet 
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key='<Leader>'
 
 nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
